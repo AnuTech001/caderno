@@ -50,15 +50,31 @@ a {
   color: #00ff00;
   text-decoration: none;
 }
+
+ul {
+  font-size: var(--paragrafo);
+  list-style: none;
+}
+
 /* ---------- [ Elementos Visuais ] ----------*/
 
 .imagens {
   width: var(--img-titulo);
 }
 
+strong {
+  color: yellow;
+}
+
+hr {
+  border: 2px dashed white;
+  width: 100%;
+  margin: var(--margem) 0;
+}
+
 /* ---------- [ Divs ] ---------- */
 
-.periodo {
+.titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +94,13 @@ a {
   border: 2px solid white;
   border-radius: 20px;
   margin: 0 var(--margem);
+}
+
+.conteudo-eng {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: var(--margem);
 }
 
 /* ---------- [ Medidas especias ] ---------- */
