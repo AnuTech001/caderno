@@ -10,6 +10,7 @@
   --gap: clamp(15px, 7vw, 25px);
   /* [ Tamanhos para imagens ] */
   --img-titulo: clamp(100px, 10vw, 200px);
+  --img-conteudo: clamp(220px, 90vw, 370px);
 }
 
 /* ---------- [ Base ] ---------- */
@@ -56,23 +57,36 @@ ul {
   list-style: none;
 }
 
-/* ---------- [ Elementos Visuais ] ----------*/
-
-.imagens {
-  width: var(--img-titulo);
+.conteudo-eng ul {
+  list-style: square;
+  margin-left: var(--margem);
 }
+/* ---------- [ Elementos Visuais ] ----------*/
 
 strong {
   color: yellow;
 }
 
+.card em {
+  color: #00ffff;
+}
+
 hr {
   border: 2px dashed white;
-  width: 100%;
-  margin: var(--margem) 0;
+  margin-right: clamp(1rem, 2.5vw, 2.5rem);
+  margin-left: clamp(1rem, 2.5vw, 2.5rem);
 }
 
 /* ---------- [ Divs ] ---------- */
+
+.imagens {
+  width: var(--img-titulo);
+}
+
+.imagens-cont {
+  width: var(--img-conteudo);
+  margin-bottom: var(--margem);
+}
 
 .titulo {
   display: flex;
@@ -93,7 +107,7 @@ hr {
   padding: var(--preenchimento);
   border: 2px solid white;
   border-radius: 20px;
-  margin: 0 var(--margem);
+  margin: var(--margem);
 }
 
 .conteudo-eng {
@@ -114,7 +128,11 @@ hr {
   h2 {
     font-size: 1.5rem;
   }
-  p {
+  p,
+  ul {
     font-size: 1.25rem;
+  }
+  .card {
+    margin: 0 var(--margem);
   }
 }
