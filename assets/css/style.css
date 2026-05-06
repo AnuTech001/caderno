@@ -43,6 +43,7 @@ h2 {
 }
 
 p {
+  margin-bottom: var(--margem);
   font-size: var(--paragrafo);
 }
 
@@ -115,6 +116,23 @@ hr {
   flex-direction: column;
   align-items: start;
   margin: var(--margem);
+}
+
+/* ---------- [ Scrollbar ] ---------- */
+
+::-webkit-scrollbar {
+  width: 0.5rem; /* equivale a 8px */
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border: 0.125rem solid white; /* equivale a 2px */
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border: 0.125rem solid white; /* equivale a 2px */
+  border-radius: 0.25rem; /* equivale a 4px */
 }
 
 /* ---------- [ Medidas especias ] ---------- */
