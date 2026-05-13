@@ -37,7 +37,8 @@ header {
 /* ---------- [ Tipografia ] ---------- */
 
 h1,
-h2 {
+h2,
+h3 {
   color: #00ffff;
   font-size: var(--titulo);
 }
@@ -51,31 +52,57 @@ a {
   font-size: var(--paragrafo);
   color: #00ff00;
   text-decoration: none;
+  background: transparent;
+}
+
+span {
+  font-size: var(--paragrafo);
+  background: transparent;
 }
 
 ul {
   font-size: var(--paragrafo);
-  list-style: none;
+  list-style: square;
+  margin-left: var(--margem);
+  margin-bottom: var(--margem);
 }
 
 .conteudo-eng ul {
   list-style: square;
   margin-left: var(--margem);
 }
+
 /* ---------- [ Elementos Visuais ] ----------*/
 
 strong {
   color: yellow;
 }
 
-.card em {
+.titulo em {
   color: #00ffff;
 }
 
 hr {
   border: 2px dashed white;
-  margin-right: clamp(1rem, 2.5vw, 2.5rem);
-  margin-left: clamp(1rem, 2.5vw, 2.5rem);
+  margin: var(--margem);
+}
+
+.card hr {
+  border-style: groove;
+  margin: var(--margem);
+}
+
+.botao {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: var(--margem);
+  bottom: var(--margem);
+  background: transparent;
+}
+
+.botao span {
+  color: #00ff00;
 }
 
 /* ---------- [ Divs ] ---------- */
@@ -143,11 +170,13 @@ hr {
     font-size: 1rem;
   }
   h1,
-  h2 {
+  h2,
+  h3 {
     font-size: 1.5rem;
   }
   p,
-  ul {
+  ul,
+  a {
     font-size: 1.25rem;
   }
   .card {
